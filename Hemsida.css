@@ -1,27 +1,19 @@
 h1{
     font-family:'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 200%;
+    padding-left: 40px;
 }
 
 body{
-    background-color: azure;
-}
-
-button{
-    width: 300px;
-    height: 75px;
-    border-radius: 50px;
-    border:30px
-
-
+    background: url(img.png/nandhu-kumar-jAMcUbsTvWE-unsplash.jpg);
+    background-size: cover;
 }
 
 .wrapper{
-    background-color: rgb(196, 252, 252);
-    width:100%;
-    margin: 0 auto;
+    width:95%;
+    margin:0 auto;
     display: grid;
-    grid-template-rows: 80px 50px auto 50px;
+    grid-template-rows: 80px 50px auto 70px  ;
     grid-template-areas: 
     "header"
     "nav"
@@ -30,25 +22,58 @@ button{
 }
 
 header{
-    background-color: azure;
+    background: transparent;
+    color:white;
     grid-area: header;
 }
 
 nav{
-    background-color:rgb(196, 252, 252);
     grid-area: nav;
+    color:white;
+    opacity: 100%;
 }
+
 nav > ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height:100%;
+    align-self: stretch;
+    align-items: stretch;
+    opacity: 100%;
 }
 
+nav li{
+    list-style-type: none;
+    padding-left:50px ;
+    display: grid;
+    opacity: 100%;
+}
+
+nav a{
+    display: grid;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: black;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: black;
+    opacity: 65%;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
 main{
-    background-color: rgb(148, 184, 184);
+    background: transparent;
     grid-area: main;
+    color: white;
 }
 
 footer{
-    background-color: rgb(174, 145, 201);
+    background: transparent;
     grid-area: footer;
+    color:white;
 }
