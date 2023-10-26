@@ -12,14 +12,17 @@ body{
 
 }
 
-.om-mig{
+.om-mig-bilder{
     font-size: 20px;
     border: solid;
-    width: 950px;
-    height: 160px;
+    width: 900px;
+    height: 185px;
     padding-left: 8px;
     padding-top: 10px;
     background-color: rgba(0, 0, 0, 0.50);
+}
+.om-mig{
+    padding-left: 908px;
 }
 
 .wrapper{
@@ -152,8 +155,6 @@ caption{
     height: 400px;
 }
 .jag{
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    
-}
+    height: 400px; 
+} 
+
