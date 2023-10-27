@@ -12,7 +12,7 @@ body{
 
 }
 
-.om-mig-bilder{
+.om-mig-text{
     font-size: 20px;
     border: solid;
     width: 900px;
@@ -21,8 +21,8 @@ body{
     padding-top: 10px;
     background-color: rgba(0, 0, 0, 0.50);
 }
-.om-mig{
-    padding-left: 908px;
+.klicka-på-bild{
+    padding-left: 958px;
 }
 
 .wrapper{
@@ -84,7 +84,7 @@ main{
 }
 
 footer{
-    background: rgba(0, 0, 0, 0.650);
+    background: rgb(0, 0, 0);
     grid-area: footer;
     color: white;
     text-align: center;
@@ -145,16 +145,10 @@ caption{
     font-size: 30px;
 }
 
-.theo{
+.theo, .golf, .mamma, .jag{
     height: 400px;
 }
-.golf{
-    height: 400px;
-}
-.mamma{
-    height: 400px;
-}
-.jag{
-    height: 400px; 
-} 
 
+.jag:hover{
+    opacity: 0.9;
+}
