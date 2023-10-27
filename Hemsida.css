@@ -9,7 +9,6 @@ body{
     background-size: cover;
     height: 100vh;
     margin: 0;
-
 }
 
 .om-mig-text{
@@ -57,7 +56,6 @@ nav > ul{
 
 nav li{
     list-style-type: none;
-    display: grid;
 }
 
 nav a{
@@ -72,10 +70,30 @@ nav a{
     background-color: rgba(0, 0, 0, 0.650);
 }
 
+main ul{
+    border-style: solid;
+    width: 390px;
+    height: 130px;
+    border-radius: 50px;
+    padding-top: 20px;  
+}
+
+main li{
+    font-size: large;
+}
+
+main li:first-of-type{
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+
 a{
-    color:white;
+    color: white;
     text-decoration: none;
 }
+
 main{
     background: transparent;
     grid-area: main;
