@@ -1,68 +1,67 @@
-h1{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 200%;
-    text-align: center;
+h1{ /*typselektor, Huuvud rebriken*/
+    font-family:'Times New Roman', Times, serif; /*ändrar typsnittet*/
+    font-size: 200%; /*ändrar textstorlek*/
+    text-align: center; /*flyttar texten*/
 }
 
-body{
-    background: url(img.png/nandhu-kumar-jAMcUbsTvWE-unsplash.jpg);
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
+body{ /*typselektor*/
+    background: url(img.png/nandhu-kumar-jAMcUbsTvWE-unsplash.jpg); /*ändrar bakgrunden, i detta fall är det en bild*/
+    background-size: cover; /*gör så bakgrunden blir i rätt storlek och så hela bild täcker hela bakgrunden*/
+    height: 100vh; /*sätter en höjd på hemsidan*/
+    margin: 0; /*Förflyttar saker så de hamnar på rätt plats*/
 }
 
-.om-mig-text{
+.om-mig-text{ /*klassselektor, till texten om mig */
     font-size: 20px;
-    border: solid;
-    width: 900px;
-    height: 185px;
-    padding-left: 8px;
-    padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.50);
+    border: solid; /*skapar en solid border*/
+    width: 900px; /*bredden på bordern*/
+    height: 185px; /*höjden på bordern*/
+    padding-left: 8px; /*flyttar texten till höger*/
+    padding-top: 10px; /*flyttar texten neråt*/
+    background-color: rgba(0, 0, 0, 0.50); /*backgrundsfärgen, detta fall svart med 50% opcaity (genomskinlighet) */
 }
-.klicka-på-bild{
-    padding-left: 958px;
+.klicka-på-bild{ /*klassselektor, till en text vid en bild */
+    padding-left: 958px; 
 }
 
-.wrapper{
+.wrapper{ /*klassselektor, omfamnar allt som finns på min henmsida*/
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-rows: 80px 80px auto 70px  ;
-    grid-template-areas: 
-    "header"
+    display: grid; /*för att innehållet i wrappern visas i form av gridar*/
+    grid-template-rows: 80px 80px auto 70px; /*storleken på alla delarna i wrappern*/
+    grid-template-areas: /*ger namn på olika griddelar*/
+    "header" /*de olika namnen*/ 
     "nav"
     "main"
     "footer"
 }
 
-header{
-    background: transparent;
-    color: white;
-    grid-area: header;
+header{ /*typselektor*/
+    background: transparent; 
+    color: white; /*ändrar text färgen*/
+    grid-area: header; /*dens grid*/
 }
 
-nav{
+nav{ /*typselektor*/
     grid-area: nav;
     color: white;
 }
 
-nav > ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+nav > ul{ /*barnselektor, ett arv till ul om ul ligger i nav*/
+    display: grid; /*skapar en grid*/
+    grid-template-columns: 1fr 1fr 1fr; /*delar upp griden*/
     height: 100%;
 }
 
-nav li{
-    list-style-type: none;
+nav li{ /*avkomlingsselektor, på nav och li*/
+    list-style-type: none; /*gör så det inte blir någon form av lista alltså tar bort t.ex punkter*/
 }
 
-nav a{
+nav a{ /*avkomlingsselektor*/
     display: grid;
-    border-radius: 100px;
-    border-style: solid;
-    border-color: rgb(255, 255, 255, 0.800);
+    border-radius: 100px; /*rundar kanter*/
+    border: solid;
     height: 30px;
     width: 150px;
     text-align: center;
@@ -70,7 +69,7 @@ nav a{
     background-color: rgba(0, 0, 0, 0.650);
 }
 
-main ul{
+main ul{ /*avkomlingsselektor*/
     border-style: solid;
     width: 390px;
     height: 130px;
@@ -78,30 +77,29 @@ main ul{
     padding-top: 20px;  
 }
 
-main li{
+main li{ /*avkomlingsselektor*/
     font-size: large;
 }
 
-main li:first-of-type{
+main li:first-of-type{ /*avkomlingsselektor, pseudoklass, ändrar den första punkten på listan*/
     list-style-type: none;
     padding-bottom: 10px;
     font-size: larger;
 }
 
 
-a{
+a{ /*typselektor, alla länkar */
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*tar bort understräck*/
 }
 
-main{
-    background: transparent;
+main{ /*typselektor*/
     grid-area: main;
     color: white;
     padding-left: 20px;
 }
 
-footer{
+footer{ /*typselektor*/
     background: rgb(0, 0, 0);
     grid-area: footer;
     color: white;
@@ -113,15 +111,15 @@ footer{
     height: 100%;
 }
 
-table, th, td, tr{
+table, th, td, tr{ /*gruppselektor*/
     border: 2px solid white;
-    border-collapse: collapse;
+    border-collapse: collapse; /*gör så det bara blir en boarder runt tabellen*/ 
     width: 760px;
     height: 30px;
     text-align: center;
 }
 
-th:nth-child(2){
+th:nth-child(2){ 
     text-align: left;
     padding-left: 10px;
 }
