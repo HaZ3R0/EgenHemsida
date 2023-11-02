@@ -119,22 +119,22 @@ table, th, td, tr{ /*gruppselektor*/
     text-align: center;
 }
 
-th:nth-child(2){ 
+th:nth-child(2){ /*struktuell psuedoklass, ändrar andra raden i tabellen*/
     text-align: left;
     padding-left: 10px;
 }
 
-th:nth-child(7){
+th:nth-child(7){ /* struktuell psuedoklass, ändrar sjunde raden*/
     text-align: right;
     padding-right: 10px;
 }
 
-th:nth-child(1), td:nth-child(1){
+th:nth-child(1), td:nth-child(1){ /*struktuell psuedoklass och gruppselektor, ändrar i första raden td ändrar i allt förutom rutan högst upp */
     text-align: left;
     width: 70px;
 }
 
-td:nth-child(1){
+td:nth-child(1){ 
     text-align: center;
 }
 
@@ -148,23 +148,23 @@ td:nth-child(7){
     padding-right: 10px;
 }
 
-tr:nth-child(even){
+tr:nth-child(even){ /*ändrar alla rader som har jämna positoner i listan t.ex andra raden efetersom det är rad 2 och fjärde raden för det är rad 4 */
     background-color: rgba(0, 128, 0, 0.50);
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd){ /*samma som ovan bara de ojämna talen*/
     background-color: rgba(0, 0, 0, 0.50);
 }
 
-caption{
-    caption-side: top;
+caption{ /*typselektor, rubriken till tabellen*/
+    caption-side: top; /*Gör så att rubriken är över tabellen*/
     font-size: 30px;
 }
 
-.theo, .golf, .mamma, .jag{
+.theo, .golf, .mamma, .jag{ /*klass och gruppselektor, mina bilder*/
     height: 400px;
 }
 
-.jag:hover{
+.jag:hover{ /*psudorklass och klassselektor, gör så att det ändras när man hoverar över just den bilden*/
     opacity: 0.9;
 }
